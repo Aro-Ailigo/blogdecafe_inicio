@@ -48,6 +48,7 @@
             h4 {
                 font-family: var(--fuenteheading);
                 line-height: 1.2;
+
             }
             
             h1 {
@@ -64,6 +65,7 @@
             
             h4 {
                 font-size: 2.8rem;
+                background-color:var(--blanco)!important;
             }
             
             img {
