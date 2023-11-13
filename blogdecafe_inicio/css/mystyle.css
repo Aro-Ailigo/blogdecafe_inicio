@@ -1,0 +1,386 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+} *,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    /* max-width: 120rem;
+    width: 90%; 
+    width: min(90%, 120rem);
+    margin: 0 auto;*/
+    background-color: rgb(75, 0, 130);
+}
+.parallax-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.contenido{
+    /* max-width: 120rem;
+    width: 90%; */
+    width: min(90%, 120rem);
+    margin: 0 auto;
+
+}
+.portada-title {
+    font-size: 71px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0em;
+    font-weight: bolder;
+}
+.portada-title-option {
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0em;
+    line-height: 1.1em;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+/**UTILIDADES**/
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/* CONFIGURACION PARA EL HEADER */
+
+.webp .header{
+    background-image: url(https://brownonline.com.ar/wp-content/uploads/2020/08/leymicaela.jpg);
+}
+
+.no-webp .header{
+    background-image: url(https://brownonline.com.ar/wp-content/uploads/2020/08/leymicaela.jpg);
+}
+
+.header{
+    background-image: url(/blogdecafe_inicio/img/portada.webp);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-attachment: fixed;
+    
+    height: 100vh;
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+    
+}
+@media (max-width: 768px){
+    .header{
+        height: 60rem;
+        background-attachment: local;
+    }   
+    .contenedor {
+        background-color: #00000000;
+    } 
+    img {
+        max-width: 30%;
+    }
+    .centrar-img{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    .img-standar{
+        align-items: center;
+        max-width: 100%;
+    }
+  
+
+     h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+     
+} 
+@media (min-width: 768px){
+  
+    .header__texto{
+        margin: 15rem;
+    }
+}
+
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 4rem;
+
+    }
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+
+
+/* CONFIGURACION PARA EL CONTENIDO */
+
+
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform:  uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+
+}
+
+.widget-curso__info{
+    font-weight: normal;
+}
+
+.widget-curso__label,.widget-curso__info{
+    font-size: 2rem;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+
+/*SOBRE NOSOTROS*/
+
+@media (min-width: 768px){
+    .sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+        /* gap: 2rem; */
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+/*CURSOS*/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type{
+    border-bottom: 0;
+}
+
+@media (min-width: 786px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem; 
+    }
+}
+
+.curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+
+}
+
+.curso__info{
+    font-weight: normal;
+}
+
+.curso__label,.widget-curso__info{
+    font-size: 2rem;
+}
+
+/**CONTACTO**/
+
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea{
+    height: 20rem;
+}
