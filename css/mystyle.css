@@ -110,7 +110,7 @@ img{
 }
 
 .header{
-    background-image: url(/blogdecafe_inicio/img/portada.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://brownonline.com.ar/wp-content/uploads/2020/08/leymicaela.jpg);
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ img{
 
     background-attachment: fixed;
     
-    height: 100vh;
+    height: 90rem;
 }
 
 .header__texto{
