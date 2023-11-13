@@ -384,3 +384,172 @@ img{
 .campo__field--textarea{
     height: 20rem;
 }
+/* Estilos para el componente desplegable de la seccion de preguntas */
+
+#preguntas {
+    background-color: #240d30;
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    padding-bottom: 4rem;
+}
+
+.content-faq-titem{
+    padding: 4rem;
+}
+.faq-item {
+    margin-bottom: 20px;
+    
+}
+
+.question {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+/* Estilos para el texto de la pregunta */
+.question h3 {
+    background-color: #4B0082; /* Fondo violeta oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    margin: 0;
+}
+
+/* Estilos para el texto de la respuesta */
+.answer p {
+    margin: 0;
+}
+
+/* Estilos para mostrar la respuesta cuando se hace clic */
+.answer.active {
+    display: block;
+}
+
+.content-flex-video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2rem;
+
+}
+/* Desplegable */
+
+.drop {
+	margin: 50px;
+   div, span {
+		padding: 10px;
+		border: 1px solid #eee;
+		border-bottom: 0; 
+		background-color: #fff;
+		display: block;
+      p {
+        display: block;
+        color: #ed8080;
+        font-weight: bold;
+		cursor: pointer;
+      }
+   }
+   span{
+	   color: #777;
+   }
+}
+
+.buton-large{
+    width: 100%!important;
+    text-align: left;
+    font-weight: 900;
+}
+.preguntas-centrar h1 {
+    font-size: 50px;
+    line-height: 1.1em;
+}
+.preguntas-centrar h2{
+    font-size: 30px;
+    line-height: 1.1em;
+}
+.preguntas-centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
+@media (max-width: 750px) {
+
+        .preguntas-centrar h2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .preguntas-centrar {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+    .content-faq-titem {
+        padding: 1rem;
+    }    
+
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #240d30; /* Fondo violeta oscuro */
+    color: #fff; /* Texto blanco */
+    initial-letter: 2rem;
+   
+  }
+  .content-faq{
+    background-color: #4B0082; /* Fondo violeta oscuro */
+  }
+  .question-center-vertical{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .identacion{
+    text-indent: 50px;
+  }
+  .mayuscula{
+    text-transform:uppercase;
+  }
+
+  .button-right{
+    margin-left: 51%;
+  }
+
+  @media (max-width: 750px) {
+    .content {
+      padding-right: 0rem;
+      padding-left: 0rem;
+    }
+    
+  }
+
+
+  /* Estilos para los botones */
+.button-color {
+    background-color: #5E3AD4; /* Fondo violeta oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 18px;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 900;
+}
+
+.button-color:hover {
+    background-color: #cfb0ec; /* Violeta claro al pasar el ratón */
+    color:#050715;
+}
