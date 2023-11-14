@@ -643,7 +643,7 @@ li{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #3498db;
+    background-color:#E2688F;
     color: #fff;
     border: none;
     padding: 15px;
@@ -657,7 +657,7 @@ li{
   }
   
   .boton-flotante:hover {
-    background-color: #2980b9;
+    background-color:#e75584;
   }
   
   .icono {
