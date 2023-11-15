@@ -150,6 +150,11 @@ img{
         height: 60rem;
         background-attachment: local;
     }   
+    .header__texto{
+        
+        margin-top: 17rem;
+        
+    }
     .contenedor {
         background-color:  rgba(76, 0, 130, 0.27);
     } 
@@ -189,7 +194,7 @@ img{
 @media (min-width: 768px){
   
     .header__texto{
-        margin: 15rem;
+        margin: 28rem;
     }
 }
 @media (max-width: 760px) {
@@ -202,6 +207,14 @@ img{
         padding-bottom: 4rem;
 
     }
+    .footer_barra{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap:2rem;
+    }
 }
 
 @media (min-width: 768px){
@@ -213,6 +226,14 @@ img{
         padding-bottom: 4rem;
 
     }
+    .footer_barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+       
+    }  
 }
 
 .logo{
@@ -271,6 +292,7 @@ img{
     font-size: 1.8rem;
     color: var(--blanco);
 }
+
 
 
 
@@ -623,6 +645,11 @@ li{
     .content {
       padding-right: 0rem;
       padding-left: 0rem;
+    }
+    .linea{   
+        border-top: 1px solid rgb(232, 226, 226);
+        padding-top: 10px;
+        display: block;
     }
     
   }
