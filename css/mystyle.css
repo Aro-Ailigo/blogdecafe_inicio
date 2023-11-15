@@ -148,7 +148,7 @@ img{
         background-attachment: local;
     }   
     .contenedor {
-        background-color: #00000000;
+        background-color: var(--oscuro);
     } 
     img {
         max-width: 30%;
