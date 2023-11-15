@@ -675,14 +675,7 @@ li{
     transform: rotate(1deg);
   }
 
-
-/* Estilos de la barra de navegación */
-           .navbar {
-            overflow: hidden;
-           
-        }
-
-        /* Estilos de los enlaces de la barra de navegación */
+/* Estilos de los enlaces de la barra de navegación */
         .navbar a {
             float: left;
             display: block;
