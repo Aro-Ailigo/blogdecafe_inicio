@@ -6,18 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/coffee.svg" type="image/x-icon">
+                                                                                                                                               
 
-
+    
     <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                                                    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mystyle.css">
+     <!-- Preload -->
 
-    <title>BlogDeCafe</title>
+     <link rel="preload" href="css/normalize.css" as="style">
+     <link rel="stylesheet" href="css/normalize.css">
+     
+     <link rel="preload" href="css/mystyle.css" as="style">
+     <link rel="stylesheet" href="css/mystyle.css">
+
+     <title>Violencia de genero- violencia en el noviazgo</title>
 </head>
 
 <body>
@@ -33,8 +39,9 @@
                     </a>
                     
                 </div>
-                <nav class="navegacion">
-                    <a class='navegacion__enlace' href='index.html'>Inicio</a>
+                <nav class="navegacion navbar" id="myNavbar">
+                    <a id="toggleBtn" href="javascript:void(0);" class="icon">&#9776;</a>
+                    <a class='navegacion__enlace linea' href='index.html'>Inicio</a>
                     <a class='navegacion__enlace' href='nosotros.html'>Nosotros</a>
                     <a class='navegacion__enlace' href='foto.html'>Fotos</a>
                     <a class='navegacion__enlace' href='video.html'>Videos</a>
@@ -43,7 +50,7 @@
             </div>
         </div>
 
-        <div class="header__texto">
+        <div class="header__texto" id="contenido_p">
             <h2 class="no-margin">INTEGRACION DE PROYECTOS
                 DE FERIA</h2>
             <p class="no-margin">EXPO ESTUDIANTIL <br> C.E.T. N° 31 <br>
@@ -51,9 +58,9 @@
         </div>
     </header>
 
-    <main class="contenido contenedor">
+    <main class="contenido">
         <h3 class="centrar-texto">La importancia de educar sobre violencia de género</h3>
-        <img class="img-standar" loading="lazy" src="img/La importancia de educar sobre violencia de género.jfif" alt="imagen blog">
+        <img class="img-standar" loading="lazy" src="img/importancia.webp" alt="imagen blog">
 
         <p>La ESI (Educación Sexual Integral) es crucial en cualquier organización educativa, permitiendo a docentes abordar temas como la violencia de género. Las escuelas deben centrarse en contrarrestar la violencia de género, aprovechando las leyes existentes para proteger a los estudiantes.
         </p>
@@ -65,12 +72,7 @@
             
         </p>  
         <p>
-            La violencia en el noviazgo puede afectar el rendimiento laboral, por ende, es importante conocer los recursos que pueden estar disponibles si la persona se encuentra en una situación de este tipo. Por ende,  educar a los estudiantes fomentando relaciones saludables y respeto mutuo, harán que cuenten con herramientas que  les ayuden a reconocer las señales en una relación abusiva y sepan poder buscar ayuda si es necesario.</p>
-    
-        </p>
-        
-
-        <p>Esto puede incluir cómo la violencia en el noviazgo puede afectar su rendimiento laboral y qué recursos pueden estar disponibles para ellos a través de su empleador si se encuentran en una situación de este tipo. En la cotidianeidad, la violencia que se ejerce en una relación tóxica no tiene género. Esto quiere decir que tanto hombres como mujeres, independientemente a su edad, pueden ser víctimas o perpetradores de violencia. 
+            La violencia en el noviazgo puede afectar el rendimiento laboral, por lo tanto, es importante conocer los recursos que pueden estar disponibles si la persona se encuentra en una situación de este tipo.  
         </p>
         <p>
             Educar sobre este tema puede ayudar a que los, las y les estudiantes reconozcan las señales de una relación abusiva y a buscar ayuda si es necesario. También tras adquirir conocimientos pueden promover relaciones saludables y el respeto mutuo.
@@ -93,7 +95,7 @@
                     </a>
                     
                 </div>
-                <div class="navegacion">
+                <div class="navegacion centrar-texto">
                     <p>
                         © 2023 Creado por Oriana Ailigo. <br>
                         Todos los derechos reservados
@@ -109,7 +111,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/modernizr.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

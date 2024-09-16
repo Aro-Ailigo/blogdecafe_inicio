@@ -22,11 +22,10 @@
     
     <link rel="preload" href="css/mystyle.css" as="style">
     <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="preload" href="css/mov.css" as="style">
+    <link rel="stylesheet" href="css/mov.css">
 
-    <link rel="preload" href="css/ejem.css" as="style">
-    <link rel="stylesheet" href="css/ejem.css">
-
-    <title>BlogDeCafe</title>
+    <title>Violencia de genero- violencia en el noviazgo</title>
 </head>
 
 <body>
@@ -39,15 +38,19 @@
                     <div class="logo-title">
                         <a class="logo title" href="index.html">
                             <img loading="lazy" src="img/Violencia.png" alt="Logo de la página">
-                            
-                            <h1 class="logo__nombre no-margin centrar-texto">Violencia en el Noviazgo</h1>
                            
+                                <h1 class="logo__nombre no-margin centrar-texto">Violencia en el Noviazgo</h1>
+                           
+        
+                            
                         </a>
                         
                     </div>
-
-                    <nav class="navegacion">
-                        <a class='navegacion__enlace' href='index.html'>Inicio</a>
+                    
+                    <nav class="navegacion navbar" id="myNavbar">
+                        
+                        <a id="toggleBtn" href="javascript:void(0);" class="icon ">&#9776;</a>
+                        <a class='navegacion__enlace linea' href='index.html'>Inicio</a>
                         <a class='navegacion__enlace' href='nosotros.html'>Nosotros</a>
                         <a class='navegacion__enlace' href='foto.html'>Fotos</a>
                         <a class='navegacion__enlace' href='video.html'>Videos</a>
@@ -57,11 +60,13 @@
                 </div>
             </div>
         
-            <div class="header__texto">
+            <div class="header__texto" id="contenido_p">
                 <h2 class="no-margin">INTEGRACION DE PROYECTOS
                     DE FERIA</h2>
                 <p class="no-margin">EXPO ESTUDIANTIL <br> C.E.T. N° 31 <br>
                     LEGISLACIÓN DEL TRABAJO</p>
+                    <img loading="lazy" width="40px" height="40px" src="https://usagif.com/wp-content/uploads/butterfly-animation-45.gif" alt="mariposa volando">
+                               
             </div>
     </header>
 
@@ -71,8 +76,8 @@
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture>
-                        <source loading="lazy" srcset="img/La importancia de educar sobre violencia de género.jfif" type="image/webp">
-                        <img class="img-standar" loading="lazy" src="img/La importancia de educar sobre violencia de género.jfif" alt="imagen-blog">
+                        <source loading="lazy" srcset="img/importancia.webp" type="image/webp">
+                        <img class="img-standar" loading="lazy" src="img/importancia.webp" alt="imagen-blog">
                     </picture>
                 </div>
                 <div class="entrada__contenido">
@@ -87,8 +92,8 @@
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture>
-                        <source loading="lazy" srcset="img/inicio2.jpg" type="image/webp">
-                        <img class="img-standar" loading="lazy" src="img/inicio2.jpg" alt="imagen-blog">
+                        <source loading="lazy" srcset="img/inicio2.webp" type="image/webp">
+                        <img class="img-standar" loading="lazy" src="img/inicio2.webp" alt="imagen-blog">
                     </picture>
                 </div>
                 <div class="entrada__contenido">
@@ -104,8 +109,8 @@
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture class="centrar-img">
-                        <source loading="lazy" srcset="img/elina chauvet.png" type="image/webp">
-                        <img class="img-standar" loading="lazy" src="img/elina chauvet.png" alt="imagen-blog">
+                        <source loading="lazy" srcset="img/elina chauvet.webp" type="image/webp">
+                        <img class="img-standar" loading="lazy" src="img/elina chauvet.webp" alt="imagen-blog">
                     </picture>
                 </div>
                 <div class="entrada__contenido">
@@ -119,8 +124,8 @@
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture class="centrar-img">
-                        <source loading="lazy" srcset="img/elina chauvet.png" type="image/webp">
-                        <img class="img-standar" loading="lazy" src="img/banco rojo.jpeg" alt="imagen-blog">
+                        <source loading="lazy" srcset="img/elina chauvet.webp" type="image/webp">
+                        <img class="img-standar" loading="lazy" src="img/banco rojo.webp" alt="imagen-blog">
                     </picture>
                 </div>
                 <div class="entrada__contenido">
@@ -140,12 +145,12 @@
 
             <ul class="cursos no-padding">
                 <li class="widget-curso">
-                    <h4 class="no-margin">Videos sobre la Impactante Realidad</h4>
+                    <h4 class="no-margin">Revelando la cruda verdad</h4>
                     <h5>
                         
                     </h5>
                     <p class="widget-curso__label">Info :
-                        <span class="widget-curso__info">Videos que Revelan la Cruda Verdad sobre la Violencia en las Parejas.</span>
+                        <span class="widget-curso__info">Videos impactantes sobre la Violencia en las Parejas.</span>
                     </p>
                     <p class="widget-curso__label">Cantidad:
                         <span class="widget-curso__info">3</span>
@@ -154,9 +159,9 @@
                 </li>
                 
                 <li class="widget-curso">
-                    <h4 class="no-margin">Trabajo realizado por los alumnos de 5to 3ra</h4>
+                    <h4 class="no-margin">Trabajo realizado por los estudiantes de 5to 3ra</h4>
                     <p class="widget-curso__label">Info:
-                        <span class="widget-curso__info">Fotos para concientizar sobre la violencia de género preservando la identidad de los alumnos</span>
+                        <span class="widget-curso__info">Fotos para concientizar sobre la violencia de género y del noviazgo preservando la identidad de los estudiantes.</span>
                     </p>
                     <p class="widget-curso__label">Cantidad:
                         <span class="widget-curso__info">8</span>
@@ -170,7 +175,7 @@
             <ul class="cursos no-padding">
                 <li class="widget-curso">                 
                     <p class="widget-curso__label">Info :
-                        <span class="widget-curso__info">En esta sección encontrarás respuestas a preguntas comunes sobre el tema de la violencia de genero, noviazgo y su prevención</span>
+                        <span class="widget-curso__info">En esta sección encontrarás respuestas a preguntas comunes sobre el tema de la violencia de genero y de noviazgo y su prevención.</span>
                     </p>
                     <p class="widget-curso__label">Cantidad:
                         <span class="widget-curso__info">3</span>
@@ -191,7 +196,7 @@
   <!-- comienzo footer -->
     <footer class="footer">
         <div class="contenido">
-            <div class="barra">
+            <div class="footer_barra">
                 <div class="logo-title">
                     <a class="logo title" href="index.html">
                         <img loading="lazy" src="img/ViolenciaOscuro.png" alt="Logo de la página">
@@ -201,7 +206,7 @@
                     </a>
                     
                 </div>
-                <div class="navegacion">
+                <div class="navegacion centrar-texto">
                     <p>
                         © 2023 Creado por Oriana Ailigo. <br>
                         Todos los derechos reservados
@@ -217,7 +222,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/modernizr.js"></script>
+   
+    <script src="js/menu.js"></script>
 
 </body>
 

@@ -1,0 +1,1 @@
+document.getElementById("toggleBtn").addEventListener("click",function(){var e=document.getElementById("contenido_p");"block"===e.style.display?e.style.display="none":e.style.display="block";var a=document.querySelector(".navbar");"navbar"===a.className?a.className+=" responsive":a.className="navbar"});

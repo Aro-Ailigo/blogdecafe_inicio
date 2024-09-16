@@ -14,10 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mystyle.css">
+     <!-- Preload -->
 
-    <title>BlogDeCafe</title>
+     <link rel="preload" href="css/normalize.css" as="style">
+     <link rel="stylesheet" href="css/normalize.css">
+     
+     <link rel="preload" href="css/mystyle.css" as="style">
+     <link rel="stylesheet" href="css/mystyle.css">
+
+     <title>Violencia de genero- violencia en el noviazgo</title>
 </head>
 
 <body>
@@ -33,8 +38,9 @@
                     </a>
                     
                 </div>
-                <nav class="navegacion">
-                    <a class='navegacion__enlace' href='index.html'>Inicio</a>
+                <nav class="navegacion navbar" id="myNavbar">
+                    <a id="toggleBtn" href="javascript:void(0);" class="icon">&#9776;</a>
+                    <a class='navegacion__enlace linea' href='index.html'>Inicio</a>
                     <a class='navegacion__enlace' href='nosotros.html'>Nosotros</a>
                     <a class='navegacion__enlace' href='foto.html'>Fotos</a>
                     <a class='navegacion__enlace' href='video.html'>Videos</a>
@@ -43,7 +49,7 @@
             </div>
         </div>
 
-        <div class="header__texto">
+        <div class="header__texto" id="contenido_p">
             <h2 class="no-margin">INTEGRACION DE PROYECTOS
                 DE FERIA</h2>
             <p class="no-margin">EXPO ESTUDIANTIL <br> C.E.T. N° 31 <br>
@@ -51,13 +57,13 @@
         </div>
     </header>
 
-    <main class="contenido contenedor">
+    <main class="contenido">
         <h3 class="centrar-texto">Fotos relacionadas a la concienciación sobre la violencia en parejas</h3>
-        <h2 class="no-margin">En este espacio, se muestra la obra de los estudiantes de 5to 3ra, presentada en fotografías artísticas, con el objetivo de concientizar sobre la violencia de género preservando la identidad de los alumnos.</h2>
+        <h4 class="no-margin">En este espacio, se muestra la obra de los estudiantes de 5to 3ra, presentada en fotografías artísticas, con el objetivo de concientizar sobre la violencia, preservando la identidad de cada uno de ellos.</h4>
           
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria1.jpeg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria1.webp">
             </div>
             <div class="curso__informacion">
                 <blockquote>
@@ -80,7 +86,7 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria2.jpeg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria2.webp">
             </div>
             <div class="curso__informacion">
                 <blockquote>
@@ -99,7 +105,7 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria3.jpeg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria3.webp">
             </div>
             <div class="curso__informacion">
                 <blockquote>
@@ -118,7 +124,7 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria4.jpeg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria4.webp">
             </div>
             <div class="curso__informacion">
                 <blockquote>
@@ -137,7 +143,7 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria8.jpeg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria8.webp">
             </div>
             <div class="curso__informacion">
                 <blockquote>
@@ -156,7 +162,7 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria5.jpg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria5.webp">
                 
             </div>
             <div class="curso__informacion">
@@ -176,13 +182,13 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria6.jpeg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria6.webp">
                 
             </div>
             <div class="curso__informacion">
                 <blockquote>
                     <header class="blanco">
-                        Foto donde una mujer es golpeada
+                        Foto de una joven siendo golpeada
                     </header>
                     <p class="inclinado">
                         La violencia en una relación es completamente inaceptable. Nadie merece ser maltratado físicamente, independientemente de su género. Nadie debe tolerar el abuso y todos merecemos vivir en un entorno seguro y amoroso.
@@ -196,12 +202,12 @@
         <!-- .curso -->
         <div class="curso">
             <div class="curso__imagen">
-                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria7.jpg">
+                <img class="img-standar" loading="lazy" class="folletos" src="/img/galeria/galeria7.webp">
             </div>
             <div class="curso__informacion">
                 <blockquote>
                     <header class="blanco">
-                        Foto persona golpeada
+                        Foto de un joven tras ser golpeado
                     </header>
                     <p class="inclinado">
                         El abuso físico en una relación puede producir depresión, por eso es importante recibir ayuda profesional para abordar y manejar su salud mental. La depresión es una enfermedad tratable y hay recursos disponibles para brindar apoyo y tratamiento adecuado.
@@ -232,7 +238,7 @@
                     </a>
                     
                 </div>
-                <div class="navegacion">
+                <div class="navegacion centrar-texto">
                     <p>
                         © 2023 Creado por Oriana Ailigo. <br>
                         Todos los derechos reservados
@@ -248,7 +254,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/modernizr.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -14,10 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <!-- Preload -->
+
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload" href="css/mystyle.css" as="style">
     <link rel="stylesheet" href="css/mystyle.css">
 
-    <title>BlogDeCafe</title>
+    <link rel="preload" href="css/pregunta.css" as="style">
+    <link rel="stylesheet" href="css/pregunta.css">
+
+    <title>Violencia de genero- violencia en el noviazgo</title>
 </head>
 
 <body>
@@ -33,8 +41,9 @@
                     </a>
                     
                 </div>
-                <nav class="navegacion">
-                    <a class='navegacion__enlace' href='index.html'>Inicio</a>
+                <nav class="navegacion navbar" id="myNavbar">
+                    <a id="toggleBtn" href="javascript:void(0);" class="icon">&#9776;</a>
+                    <a class='navegacion__enlace linea' href='index.html'>Inicio</a>
                     <a class='navegacion__enlace' href='nosotros.html'>Nosotros</a>
                     <a class='navegacion__enlace' href='foto.html'>Fotos</a>
                     <a class='navegacion__enlace' href='video.html'>Videos</a>
@@ -43,7 +52,7 @@
             </div>
         </div>
 
-        <div class="header__texto">
+        <div class="header__texto" id="contenido_p">
             <h2 class="no-margin">INTEGRACION DE PROYECTOS
                 DE FERIA</h2>
             <p class="no-margin">EXPO ESTUDIANTIL <br> C.E.T. N° 31 <br>
@@ -51,7 +60,7 @@
         </div>
     </header>
 
-    <main class="contenido contenedor">
+    <main class="contenido">
         <h3 class="centrar-texto">Preguntas frecuentes</h3>
         <h4 class="centrar-texto">En esta sección encontrarás respuestas a preguntas comunes sobre el tema de la violencia de genero, noviazgo y su prevención</h4>
 
@@ -177,7 +186,7 @@ La violencia en el noviazgo se refiere a los comportamientos violentos o abusivo
                     </a>
                     
                 </div>
-                <div class="navegacion">
+                <div class="navegacion centrar-texto">
                     <p>
                         © 2023 Creado por Oriana Ailigo. <br>
                         Todos los derechos reservados
@@ -195,6 +204,7 @@ La violencia en el noviazgo se refiere a los comportamientos violentos o abusivo
     </footer>
    
     <script src="js/desplegable.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

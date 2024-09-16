@@ -14,10 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/mystyle.css">
+     <!-- Preload -->
 
-    <title>BlogDeCafe</title>
+     <link rel="preload" href="css/normalize.css" as="style">
+     <link rel="stylesheet" href="css/normalize.css">
+     
+     <link rel="preload" href="css/mystyle.css" as="style">
+     <link rel="stylesheet" href="css/mystyle.css">
+
+     <title>Violencia de genero- violencia en el noviazgo</title>
 </head>
 
 <body>
@@ -33,8 +38,9 @@
                     </a>
                     
                 </div>
-                <nav class="navegacion">
-                    <a class='navegacion__enlace' href='index.html'>Inicio</a>
+                <nav class="navegacion navbar" id="myNavbar">
+                    <a id="toggleBtn" href="javascript:void(0);" class="icon">&#9776;</a>
+                    <a class='navegacion__enlace linea' href='index.html'>Inicio</a>
                     <a class='navegacion__enlace' href='nosotros.html'>Nosotros</a>
                     <a class='navegacion__enlace' href='foto.html'>Fotos</a>
                     <a class='navegacion__enlace' href='video.html'>Videos</a>
@@ -43,7 +49,7 @@
             </div>
         </div>
 
-        <div class="header__texto">
+        <div class="header__texto" id="contenido_p">
             <h2 class="no-margin">INTEGRACION DE PROYECTOS
                 DE FERIA</h2>
             <p class="no-margin">EXPO ESTUDIANTIL <br> C.E.T. N° 31 <br>
@@ -51,11 +57,11 @@
         </div>
     </header>
 
-    <main class="contenido contenedor">
+    <main class="contenido">
         <h3 class="centrar-texto">Exposición de Zapatos Rojos by Elina Chauvet</h3>
         <div class="centrar-img">
 
-            <img class="img-standar" loading="lazy" src="img/elina chauvet.png" alt="imagen-blog">
+            <img class="img-standar" loading="lazy" src="img/elina chauvet.webp" alt="imagen-blog">
         </div>
 
         
@@ -73,29 +79,29 @@
             Es importante mencionar que la exposición está inspirada según el informe del Observatorio de Femicidios en Argentina realizada por  “Adriana Marisel Zambrano” quien dirige La Casa del Encuentro. Según lo detallado por el informe, desde el 1° de enero al 31 de octubre de 2023, se produjeron 250 femicidios, 3 trans/travesticidios y 22 femicidios vinculados de varones adultos y niños. Los datos más relevantes son qué 308 hijas /hijos quedaron sin madre, el 59 % son menores de edad; el 56 % de los agresores eran parejas o exparejas. Como cada informe lo demuestra, el lugar más inseguro para una mujer en situación de violencia continúa siendo su vivienda o la vivienda compartida con el agresor (55 % fueron asesinadas en su hogar). Y si bien los femicidios abarcan el territorio nacional, en términos absolutos Buenos Aires sigue siendo la provincia con más casos, seguida por Santa Fe, Córdoba y Salta. 
 
         </p>
-        <h2>  INFORMACIÓN ADICIONAL: </h2>
+        <h3>  INFORMACIÓN ADICIONAL: </h3>
         <ul>
-            <li><h2><strong>50 víctimas habían realizado denuncia</strong></h2>
+            <li><p><strong>50 víctimas habían realizado denuncia</strong></p>
             </li>
-            <li><h2><strong> 17 femicidas tenían dictada medida cautelar de prevención</strong></h2>
+            <li><p><strong> 17 femicidas tenían dictada medida cautelar de prevención</strong></p>
             </li>
-            <li><h2><strong>12 femicidas perteneciente o ex fuerza de seguridad</strong></h2>
+            <li><p><strong>12 femicidas perteneciente o ex fuerza de seguridad</strong></p>
             </li>
-            <li><h2><strong>2 víctimas en presunción de prostitución o trata</strong></h2>
+            <li><p><strong>2 víctimas en presunción de prostitución o trata</strong></p>
             </li>
-            <li><h2><strong>6 víctimas embarazadas</strong></h2>
+            <li><p><strong>6 víctimas embarazadas</strong></p>
             </li>
-            <li><h2><strong>24 víctimas tenían indicio de abuso sexual</strong></h2>
+            <li><p><strong>24 víctimas tenían indicio de abuso sexual</strong></p>
             </li>
-            <li><h2><strong>3 víctimas eran mujer trans</strong></h2>
+            <li><p><strong>3 víctimas eran mujer trans</strong></p>
             </li>
-            <li><h2><strong>13 víctimas eran migrantes</strong></h2>
+            <li><p><strong>13 víctimas eran migrantes</strong></p>
             </li>
-            <li><h2><strong>28 Femicidios en contexto de narcocriminalidad</strong></h2>
+            <li><p><strong>28 Femicidios en contexto de narcocriminalidad</strong></p>
             </li>
-            <li><h2><strong>22 femicidios vinculados de varones adultos y niños</strong></h2>
+            <li><p><strong>22 femicidios vinculados de varones adultos y niños</strong></p>
             </li>
-            <li><h2><strong>37 femicidas se suicidaron</strong></h2>
+            <li><p><strong>37 femicidas se suicidaron</strong></p>
             </li>
             
         </ul>
@@ -135,7 +141,7 @@
                     </a>
                     
                 </div>
-                <div class="navegacion">
+                <div class="navegacion centrar-texto">
                     <p>
                         © 2023 Creado por Oriana Ailigo. <br>
                         Todos los derechos reservados
@@ -151,7 +157,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/modernizr.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
